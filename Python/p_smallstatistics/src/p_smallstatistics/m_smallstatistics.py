@@ -78,4 +78,3 @@ def f_Mode(v_data):
         return "No hay moda"
     else:
         return v_modas
-

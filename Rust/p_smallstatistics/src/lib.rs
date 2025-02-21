@@ -20,8 +20,6 @@ pub fn f_variance(datos: &[f64], es_muestra: bool) -> f64 {
 }
 
 
-
-
 pub fn f_median(datos: &[f64]) -> f64 {
     
     // Se ordenan los datos para calcula la media
@@ -42,7 +40,6 @@ pub fn f_median(datos: &[f64]) -> f64 {
         (data_sort[pos1] + data_sort[pos2]) / 2.0
     }
 }
-
 
 pub fn f_standard_desviation(datos: &[f64], es_muestra: bool) -> f64 {
     f_variance(datos, es_muestra).sqrt()
