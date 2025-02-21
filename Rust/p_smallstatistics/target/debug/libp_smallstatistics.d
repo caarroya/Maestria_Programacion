@@ -1,0 +1,1 @@
+/Users/carlosandresarroyave/Documents/GitHub/Maestria_Programacion/Maestria_ProgramacionEntregas/Rust/p_smallstatistics/target/debug/libp_smallstatistics.rlib: /Users/carlosandresarroyave/Documents/GitHub/Maestria_Programacion/Maestria_ProgramacionEntregas/Rust/p_smallstatistics/src/lib.rs

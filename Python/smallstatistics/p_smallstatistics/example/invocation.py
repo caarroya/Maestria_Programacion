@@ -2,7 +2,7 @@ from p_smallstatistics import m_smallstatistics
 
 #En este bloque puedes e diligenciar el valor de la tupla numerica con los datos que deseas calcular las funciones estadisticas , adicional el peso
 v_data = (10 , 50 , 30 , 40)
-v_weigt = (1 , 2 , 3,4 )
+v_weigt = (1 , 2 , 3, 4 )
 
 
 
