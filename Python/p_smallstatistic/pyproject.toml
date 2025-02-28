@@ -1,5 +1,5 @@
 [project]
-name = "p_smallstatistic"
+name = "p-smallstatistic"
 version = "0.1.0"
 description = ""
 authors = [
@@ -9,6 +9,10 @@ readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
 ]
+
+[tool.poetry]
+packages = [{include = "p_smallstatistic", from = "src"}]
+
 
 
 

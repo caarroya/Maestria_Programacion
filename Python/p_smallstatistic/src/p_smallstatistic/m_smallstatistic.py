@@ -2,6 +2,17 @@ import math
 from collections import Counter
 
 '''
+Esta funcion se encarga de calcula el promedio de un dataSet, adicional  su valor maximo y minimo
+'''
+
+def f_average(v_data):
+    v_data_sort = sorted(v_data)
+    v_max = v_data_sort[-1]
+    v_min = v_data_sort[0]
+    v_average = sum(v_data_sort) /len(v_data_sort) 
+    return v_average , v_max , v_min
+
+'''
 Es funcion se encarga de retornar 3 valores , la sumatoria de todos los elementos de la tupla entrada, la longitud y la tupla ordena
 '''
 def f_sumarize (v_data):

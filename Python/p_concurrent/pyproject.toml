@@ -11,10 +11,14 @@ dependencies = [
     "requests (>=2.32.3,<3.0.0)"
 ]
 
+[tool.poetry]
+packages = [{include = "p_concurrent", from = "src"}]
+
 
 [tool.poetry.dependencies]
-p_smallstatistic = {path = "../p_smallstatistic/src/p_smallstatistic/m_smallstatistic" , develop=true }
 
+p_smallstatistic = {path="../p_smallstatistic",develop=true}
+ 
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
