@@ -1,0 +1,24 @@
+[project]
+name = "concurrenciapythonrust"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Carlos Arroyave",email = "67001576+caarroya@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "concurrenciapythonrustr @ src/rustcrates/concurrenciapythonrustr/target/wheels/concurrenciapythonrustr-0.4.0-cp312-cp312-macosx_11_0_arm64.whl",
+    "maturin (>=1.8.3,<2.0.0)",
+    "pytest (>=8.3.5,<9.0.0)",
+    "requests (>=2.32.3,<3.0.0)",
+    "pytest-mock (>=3.14.0,<4.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "concurrenciapythonrust", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
