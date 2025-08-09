@@ -14,6 +14,10 @@ def pf(x_n, c_k):
 x_base = np.linspace(0, 1, 100)
 y_base = 2 * np.pi * x_base + np.sin(x_base) + np.random.randn(100)
 
+
+print(f"x_base: {x_base}")
+print(f"x_base: {x_base.shape}")
+print(f"y_base: {y_base}")
 # Cross validation
 
 alpha = 0.7
@@ -23,6 +27,12 @@ x_train = x_base[index_total[:round(alpha * len(x_base))]]
 y_train = y_base[index_total[:round(alpha * len(x_base))]]
 x_test = x_base[index_total[round(alpha * len(x_base)):]]
 y_test = y_base[index_total[round(alpha * len(x_base)):]]
+
+print(f"x_train: {x_train}")
+print(f"x_train: {x_train.shape}")
+print(f"y_train: {y_train}")
+print(f"x_test: {x_test}")
+print(f"x_test: {x_test.shape}")
 
 #x = [0.1, 0.4, 0.5, 0.7, 0.9]
 # y = np.random.choice(y_base, size=100, replace=True)
@@ -49,6 +59,8 @@ pf_test = np.zeros((len(x_test), K))
 for n in range(len(x_test)):
     for k in range(K):
         pf_test[n][k] = pf(x_test[n], k)
+        
+
         
 pf_test2= np.zeros((len(x_base), K))
 for n in range(len(x_base)):
